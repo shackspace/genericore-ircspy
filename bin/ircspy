@@ -1,0 +1,12 @@
+#! /bin/sh
+#
+# usage: ircspy <ircspy-config>
+#
+set -euf
+
+readlink="`readlink -f "$0"`"
+dirname="`dirname "$readlink"`"
+script="`readlink -f "$dirname/../src/main.js"`"
+config="$1"
+
+exec node "$script" "$config" 

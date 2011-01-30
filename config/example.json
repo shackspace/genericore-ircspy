@@ -1,0 +1,20 @@
+{
+  "amqp": {
+    "reconnect_timeout": 10000,
+    "connection": {
+      "host": "10.42.1.73",
+      "port": 5672,
+      "login": "guest",
+      "password": "guest",
+      "vhost": "/"
+    }
+  },
+  "ircspy": {
+    "server": "irc.freenode.org",
+    "channel": "#genericoredump",
+    "port": 6667,
+    "nick": "ircspy",
+    "name": "Genericore IRC Spy",
+    "output": "ircspy"
+  }
+}
